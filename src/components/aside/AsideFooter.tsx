@@ -2,6 +2,7 @@ import { LuLogOut, LuSettings } from "react-icons/lu";
 import Authenticate from "../auth/Authenticate";
 import IconButton from "../buttons/IconButton";
 import { auth } from "../../libs/firebase";
+import DarkModeToggleButton from "../buttons/DarkModeToggleButton";
 
 function AsideFooter() {
   return (
@@ -11,7 +12,8 @@ function AsideFooter() {
           Cerrar sesión
         </IconButton>
       </Authenticate>
-      <IconButton icon={LuSettings}>Configuración</IconButton>
+      {/* <IconButton icon={LuSettings}>Configuración</IconButton> */}
+      <DarkModeToggleButton />
     </footer>
   );
 }
