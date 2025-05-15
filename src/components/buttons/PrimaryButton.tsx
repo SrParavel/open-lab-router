@@ -10,7 +10,7 @@ function PrimaryButton({ children, icon: Icon, className, ...props }: PrimaryBut
   return (
     <button
       {...props}
-      className={`bg-gray-800  text-gray-50 flex gap-2 items-center justify-center font-semibold px-4 py-2 rounded-lg hover:contrast-120 transition cursor-pointer ${className}`}
+      className={`bg-gray-800 dark:bg-blue-500  text-gray-50 flex gap-2 items-center justify-center font-semibold px-4 py-2 rounded-lg hover:contrast-120 transition cursor-pointer ${className}`}
     >
       {Icon && <Icon className="size-5" />}
       {children}

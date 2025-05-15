@@ -11,8 +11,8 @@ import NewProjectButton from "../buttons/NewProjectButton";
 
 function Aside({ className, ...props }: HTMLAttributes<HTMLElement>) {
   return (
-    <aside {...props} className={`p-4 bg-gray-50 flex flex-col gap-4 ${className ?? ""}`}>
-      <div className="flex justify-between gap-4 items-center dark:bg-gray-800">
+    <aside {...props} className={`p-4 bg-gray-50 flex flex-col gap-4 ${className ?? ""} dark:bg-gray-800`}>
+      <div className="flex justify-between gap-4 items-center ">
         <Logo />
         <IconButton icon={LuPanelsTopLeft} />
       </div>
