@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import Layout from "./layouts/Layout.tsx";
 import Projects from "./pages/Projects.tsx";
 import AuthRedirect from "./components/auth/AuthRedirect.tsx";
+import Login from "./pages/Login.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -24,6 +25,7 @@ createRoot(document.getElementById("root")!).render(
             }
           />
         </Route>
+        <Route path="login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

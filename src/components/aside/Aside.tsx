@@ -3,11 +3,11 @@ import Logo from "../Logo";
 import IconButton from "../buttons/IconButton";
 import { LuPanelsTopLeft } from "react-icons/lu";
 import Profile from "../auth/Profile";
-import GithubLoginButton from "../auth/GithubLoginButton";
 import Authenticate from "../auth/Authenticate";
 import AsideNav from "./AsideNav";
 import AsideFooter from "./AsideFooter";
 import NewProjectButton from "../buttons/NewProjectButton";
+import Authentication from "./Authentication";
 
 function Aside({ className, ...props }: HTMLAttributes<HTMLElement>) {
   return (
@@ -28,7 +28,7 @@ function Aside({ className, ...props }: HTMLAttributes<HTMLElement>) {
       </Authenticate>
 
       <Authenticate type="guest">
-        <GithubLoginButton />
+        <Authentication />
       </Authenticate>
 
       <AsideFooter />
